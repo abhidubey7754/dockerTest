@@ -1,5 +1,5 @@
 FROM openjdk:17
 MAINTAINER abhi
-COPY target/docker_app.jar  /users/apps
 WORKDIR /users/apps
+COPY target/docker_app.jar  docker_app.jar
 ENTRYPOINT ["java" , "-jar" , "docker_app.jar"]
